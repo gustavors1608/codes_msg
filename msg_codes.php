@@ -3,6 +3,7 @@
 class codes{
     private static $errorCodes = array(
         "0000" => "Sucesso",
+        //autenticacao
         "1001" => "Credenciais Inválidas",
         "1002" => "Conta Não Ativada",
         "1003" => "Falha na Autenticação de 2F",
@@ -13,6 +14,7 @@ class codes{
         "1008" => "Usuário Não Encontrado",
         "1009" => "E-mail Não Verificado",
         "1010" => "Verifique o seu email para continuar",
+        //dados
         "2001" => "Aviso - Dados já existem no sistema.",
         "2002" => "Erro - Dados não encontrados para atualização.",
         "2003" => "Erro - Dados não encontrados para obtenção.",
@@ -24,9 +26,10 @@ class codes{
         "2101" => "Erro Interno - Falha ao atualizar dados.",
         "2102" => "Erro Interno - Falha ao obter dados.",
         "2103" => "Erro Interno - Falha ao remover dados.",
-        "2104" => "Erro Interno - Serviço temporariamente indisponível.",
-        "2105" => "Erro - Método requisitado indisponível.",
-
+        "2104" => "Erro - Método requisitado indisponível.",
+        //funcionamento
+        "3000" => "Erro Interno - Serviço temporariamente indisponível.",
+        "3001" => "Erro - Não foi possível acessar",
     );
 
     public static function message($code){
